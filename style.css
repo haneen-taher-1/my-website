@@ -1,0 +1,646 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --light-blue: #1a7bd1;
+    --dark-gray: #2c2d3f;
+    --light-gray: #757575;
+    --bg-white: #f6f6f6;
+    --bg-newsletter: #edf2ff;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
+    direction: ltr;
+    text-align: left;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,
+h2,
+h3{
+    color: var(--dark-gray) ;
+}
+h2,
+h3{
+    font-weight: 600;
+}
+p {
+    color: var(--light-gray);
+    font-size: 14px;
+}
+/* Utility Classes */
+.text-primary{
+    color: var(--light-blue);
+}
+.btn{
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+
+}
+.btn-primary{
+    background-color: var(--light-blue);
+    color: #fff;
+    border: none;
+     box-shadow: 0 2px 18x rgba(0,0,0,0.5);
+}
+.btn-primary:hover{
+    background-color: #30c0ff;
+    box-shadow: 0 4px 15px rgba(48,192,255,0.4);
+}
+.btn-secondary{
+    background-color: transparent;
+    color: var(--light-blue);
+    border: 2px solid var(--light-blue);
+     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+.btn-secondary:hover{
+    background-color: var(--light-blue);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(17, 18, 18, 0.4);
+
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+.title{
+    text-align: center;
+}
+.title h2{
+    font-size: 32px;
+    margin: auto;
+    max-width: 600px;
+}
+.title img{
+    margin: 20px 0;
+}
+.title p{
+    max-width: 500px;
+    margin: auto;
+    line-height: 1.6;
+    margin: auto;
+    font-size: 16px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+section {
+    padding: 6rem 0;
+}
+
+/* Home start */
+#home .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.6);
+    z-index: 3;
+}
+#home .navbar nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1200px;
+    min-height: 100px;
+    margin: auto;
+
+}
+#home .navbar nav ul{
+    display: flex;
+}
+#home .navbar nav ul a{
+    margin: 0 15px;
+    color: var(--dark-gray);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+#home .navbar nav ul a:hover{
+    color: var(--light-blue);
+}
+#home .navbar .logo{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;} 
+#home .navbar .brand{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+#home .navbar nav .brand span{
+        font-size: 22px;
+        font-weight: 700;
+         background: linear-gradient(90deg, #1a7bd1,#30c0ff);
+         background-clip: text;
+         -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+
+}
+
+#home .home-content{
+    background:url(images/vecteezy_ai-generated-team-of-doctor-in-a-hospital-background_36204634.jpg) no-repeat center center/cover;
+    min-height:100vh ;
+    display: flex;
+    align-items: center;
+    margin-top:2rem ;
+
+}
+#home .home-content .col{
+    width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+#home .home-content .col small{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+#home .home-content .col small img{
+    vertical-align: middle; 
+}
+#home .home-content .col h1{
+    font-size: 40px;
+    max-width: 600px;
+    line-height: 1.4;
+}
+#home .home-content .col p{
+    margin: 10px 0 30px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+/* Home end */
+/* About start */
+#about ,#services{
+    padding: 6rem 0;
+}
+#about .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    margin-top: 5rem;
+}
+#about .row .col h3{
+    font-size: 25px;
+}
+#about .row .col hr{
+    width: 60px;
+    height: 3px;
+    background-color: var(--light-blue);
+    border: none;
+    margin: 10px 0;
+}
+#about .row .col p{
+font-size: 16px;
+line-height: 1.6;
+margin-bottom: 25px;
+}
+#about .row .col .list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 19px;
+}
+#about .row .col .list li{
+    margin-bottom: 5px;
+    color: var(--light-gray);
+}
+#about .row .col .list li i{
+    color: var(--light-blue);
+}
+
+#about .row img{
+    width: 100%;
+}
+
+/* About end */
+/* info start */
+#info{
+    background: url(./images/vecteezy_medicine-doctor-with-stethoscope-standing-and-diagnosis-in_10746224.jpg) no-repeat center center/cover;
+    padding: 6rem 0;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+#info::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-blue);
+    z-index: -1;
+    opacity: 0.5;
+}
+#info .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+#info .row .col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info .row .col:hover i{
+    background-color: #fff;
+    color: var(--light-blue);
+}
+
+#info .row .col i{
+    font-size: 30px;
+    margin-right: 20px;
+    padding: 20px;
+    border: #fff 2px solid;
+    border-radius: 50%;
+    padding: 20px;
+}
+#info .row .col span{
+    font-size: 30px;
+    font-weight: 600;
+}
+#info .row .col p{
+    color: #fff;
+}
+/* info end */
+#video .video-wrapper{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px -10px;
+}
+/* Services start */
+#services .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 3rem;
+    margin-top: 5rem;
+}
+#services .row .item{
+    display: flex;
+}
+#services .row .item i{
+    font-size: 40px;
+    color: var(--light-blue);
+    margin-right: 20px;
+}
+#services .row .item h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* Services end */
+/* table start */
+
+.data-table {
+    width: 100%;
+    max-width: 1000px; 
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    overflow: hidden; 
+    text-align: center;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 15px;
+    border: 1px solid #eee;
+}
+.data-table thead {
+    background-color: var(--light-blue);
+    color: #fff;
+    font-size: 16px;
+}
+
+.data-table th {
+    font-weight: 600;
+}
+.data-table tbody tr:nth-child(even) {
+    background-color: var(--bg-white); 
+}
+
+.data-table tbody tr:hover {
+    background-color: #e8f5ff; 
+}
+.data-table tfoot {
+    background-color: var(--dark-gray);
+    color: #fff;
+    font-size: 16px;
+}
+.data-table tfoot td {
+    padding: 12px;
+    text-align: center;
+}
+/* doctor start */
+#doctors,
+#contact
+{
+    padding: 6rem 0;
+    background: var(--bg-white); 
+}
+#doctors .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    gap: 2.5rem;
+}
+#doctors .row .item{
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    text-align: center;
+}
+#doctors .row .item img{
+    width: 180px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+
+}
+#doctors .row .item .item-details{
+    padding: 2rem 0;
+}
+#doctors .row .item .item-details h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#doctors .row .item .item-details p{
+    font-size: 14px;
+    color: var(--light-gray);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+/* doctor end */
+/* contact start */
+#contact .title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#contact .title img{
+   display: block;
+    margin: 1rem auto;
+    max-width:80px ;
+    height: auto;
+}
+#contact .row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+}
+#contact form{
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+#contact .form-control{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+#contact  input,
+#contact  select,
+#contact  textarea{
+    padding: 12px;
+    color: var(--light-gray);
+    outline-color:var(--light-blue) ;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+#contact  textarea{
+    resize: none;
+}
+#contact button{
+  width: 100%;
+  padding: 12px;
+    font-size: 16px; 
+    border: none; 
+    border-radius: 8px;
+    background-color: var(--light-blue);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#contact button:hover{
+    background-color: #30c0ff;
+}
+.checkbox-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+/*contact end*/
+/*footer start*/
+.footer{
+    background-color: var(--dark-gray);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+.footer p{
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+/*footer end*/
+
+/* Responsive Design (Media Queries) */
+
+
+/* Tablet/Small Desktop */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 1.5rem; 
+    }
+    #about .row {
+        grid-template-columns: 1fr; 
+        row-gap: 3rem;
+        text-align: center;
+    }
+    #info .row {
+        grid-template-columns: repeat(2, 1fr); 
+        row-gap: 3rem;
+        column-gap: 2rem;
+    }
+    #services .row {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 3rem 2rem;
+    }
+
+    #services .row .item {
+        flex-direction: column; 
+        text-align: center;
+    }
+    #services .row .item i {
+        margin: 0 auto 10px;
+    }
+    #doctors .row {
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap: 2rem;
+        row-gap: 3rem;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    
+
+    #home .navbar nav ul {
+        display: none;     }
+    #home .navbar nav {
+        min-height: 80px;
+        padding: 0 1rem;
+    }
+    .title h2 {
+        font-size: 28px;
+    }
+    #home .home-content .col h1 {
+        font-size: 30px;
+    }
+    #home .home-content {
+        min-height: 60vh;
+    }
+
+    #info .row {
+        grid-template-columns: 1fr; 
+        row-gap: 2rem;
+    }
+    
+    #services .row {
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+
+    #doctors .row {
+        grid-template-columns: 1fr; 
+        row-gap: 2rem;
+    }
+    
+    .data-table {
+        display: block; 
+        width: 100%;
+        overflow-x: auto; 
+    }
+    .data-table thead, .data-table tbody, .data-table tfoot {
+        min-width: 500px; 
+        display: table-row-group;
+    }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+
+#contact .form-control input[type="text"],
+#contact .form-control input[type="email"],
+#contact .form-control input[type="tel"],
+#contact .form-control select {
+    flex: 1 1 45%; 
+    min-width: 250px; 
+}
+/* Ensure single inputs take full width */
+#contact .form-control input[type="date"],
+#contact .form-control textarea {
+    min-width: 100%;
+}
+/* Styling for Checkbox Items */
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.checkbox-item input[type="checkbox"] {
+    width: auto;
+    min-width: 20px;
+    height: 20px;
+}
+.checkbox-item label {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+@media (max-width: 600px) {
+    #contact .form-control {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    #contact .form-control input,
+    #contact .form-control select {
+        min-width: 100%;
+    }
+}
+/* Small Mobile Devices */
+@media (max-width: 992px) {
+    #home .navbar nav ul {
+        display: none; 
+    }
+    #home .navbar nav {
+        justify-content: space-between; 
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+}

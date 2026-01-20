@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LifeCare Hospital </title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Home Section Start -->
+    <header id="home">
+<div class="navbar">
+<nav>
+<a href="./index.html" class="brand"> <img src="../images/vecteezy_cross_1194416.png" class="logo" alt="LifeCare Hospital logo"> <span>LifeCare Hospital</span> </a>
+<a href="#" class="menu-toggle">
+    <i class="fa-solid fa-bars"></i> </a>
+    <ul>
+        <li><a href="./index.html#home">Home</a></li>
+        <li><a href="./index.html#about">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./doctors.html">Doctors</a></li>
+        
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+</nav>
+</div>
+    </header>
+    <main>
+   <!--Contact start-->
+            <section id="contact">
+               <div class="container">
+                <div class="title">
+                    <h2>We Are Always Ready To Help You. Book An Appointment</h2>
+                    <img src="./images/vecteezy_heart-rate-pulse-png_15309491.png" alt=" contact" width="8%" height="8%">
+                    <p>
+                        If you have any questions or need assistance, please don't hesitate to reach out to us. Our dedicated team is here to help you with your healthcare needs.
+                    </p>
+                </div>
+                <div class="row">
+                    <form action="#" method="POST">
+    
+    <div class="form-control">
+        <input type="text" placeholder="Full Name" required name="full_name" minlength="5" title="Full name must be at least 5 characters long">
+        <input type="email" placeholder="Email Address" required name="email">
+    </div>
+
+    <div class="form-control">
+        <input type="tel" placeholder="Phone Number" required name="phone" pattern="[0-9]{8,}" title="Please enter a valid phone number (8 digits or more)">
+
+        <select name="service" required>
+            <option value="" disabled selected>Select a Service</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="dental">Dental Care</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="general">General Checkup</option>
+            <option value="surgery">General Surgery</option>
+        </select>
+    </div>
+
+    <div class="form-control">
+        <label for="appt-date" style="display: block; font-weight: 500; color: var(--dark-gray); margin-bottom: 0.5rem;">Preferred Appointment Date:</label>
+        <input type="date" id="appt-date" required name="date" min="2025-12-15" title="Appointment must be scheduled for a future date (Starting from 15 Dec 2025)">
+    </div>
+
+    <div class="form-control" style="flex-direction: column;">
+        <label class="checkbox-title" style="margin-bottom: 1rem;">
+            Optional Services (Select one or more): 
+        </label>
+        <div class="checkbox-options" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="insurance" name="extra" value="insurance">
+                <label for="insurance" class="checkbox-title">I have valid health insurance</label>
+            </div>
+            
+            <div class="checkbox-item">
+                <input type="checkbox" id="transport" name="extra" value="transport">
+                <label for="transport" class="checkbox-title">Need transportation service</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="checkbox" id="reminder" name="extra" value="reminder" checked>
+                <label for="reminder" class="checkbox-title">Send appointment reminder</label>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="form-control" style="flex-direction: column; gap: 0;">
+        <textarea rows="6" placeholder="Your Message / Reason for Appointment (Required)" required name="Message" minlength="10" title="Please describe your reason for appointment in at least 10 characters"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Book An Appointment</button>
+</form>
+                    
+                </div>
+        </div>
+    </section>
+    <!--Contact end-->
+     </main>
+     <footer class="footer">
+        <p>&copy; 2025 LifeCare Hospital. All Rights Reserved</p>
+     </footer>
+    
+</body>
+</html>
